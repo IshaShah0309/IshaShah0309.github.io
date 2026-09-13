@@ -342,3 +342,82 @@ body {
       0 8px 18px -10px rgb(60 40 10 / 0.5);
   }
 }
+
+/* ── the process rail ─────────────────────────────────────────────────
+   A timeline, so it has to read as one continuous run. The dotted track
+   carries past every stage and through the gaps between them; resting on a
+   stage inks the line from the first stage down to that one and fills every
+   node it passes. `:has(~ .rail-step:hover)` is what reaches back up the
+   list: without it a stage can only light its own length, which shows as a
+   lit segment floating between two unlit gaps rather than as progress. */
+@layer components {
+  .rail {
+    --rail-x: -1.05em;
+    --rail-gap: 0.95em;
+  }
+
+  /* the unlit track, running to the next node so the gap is covered */
+  .rail-track,
+  .rail-ink {
+    position: absolute;
+    left: var(--rail-x);
+    top: 0.7em;
+    width: 1px;
+    height: calc(100% - 0.7em + var(--rail-gap));
+  }
+
+  .rail-track {
+    background-image: repeating-linear-gradient(
+      to bottom,
+      rgb(122 90 40 / 0.55) 0 2px,
+      transparent 2px 6px
+    );
+  }
+
+  .rail-ink {
+    background: color-mix(in srgb, var(--color-maroon) 80%, transparent);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 520ms var(--ease-vellum);
+  }
+
+  /* every stage above the one being rested on is already behind us */
+  .rail-step:has(~ .rail-step:hover) .rail-ink {
+    transform: scaleY(1);
+  }
+
+  .rail-node {
+    position: absolute;
+    left: var(--rail-x);
+    top: 0.45em;
+    display: block;
+    width: 0.5em;
+    height: 0.5em;
+    transform: translateX(calc(-50% + 0.5px)) rotate(45deg);
+    border: 1px solid rgb(122 90 40 / 0.8);
+    background: #f3e7cc;
+    transition:
+      background-color 420ms ease,
+      border-color 420ms ease;
+  }
+
+  .rail-step:hover .rail-node,
+  .rail-step:has(~ .rail-step:hover) .rail-node {
+    border-color: var(--color-maroon);
+    background: var(--color-maroon);
+  }
+
+  .rail-title {
+    transition: color 420ms ease;
+  }
+
+  .rail-step:hover .rail-title {
+    color: var(--color-maroon);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .rail-ink {
+      transition: none;
+    }
+  }
+}

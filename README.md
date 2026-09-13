@@ -71,6 +71,16 @@ of objects:
 Positions live in `src/data/volumes.ts` (`slot`, and `SHELF_OPENING`) as
 fractions of the photograph, so the whole assembly scales as a single object.
 
+Two traces of the original books survived the synthesis, and both only showed
+once a volume was pulled out of the row: the feet of the originals, as coloured
+crescents along the bottom of the panel, and the pale edge of the seventh
+volume at the right-hand end, which is exactly where volume VI stands.
+`tools/patch_alcove.py` repairs both and keeps the untouched original at
+`tools/alcove.orig.webp`, so it can be re-run without repairing a repair. The
+junction at the foot of the panel is rebuilt per column, from the panel above
+and the board below with the contact shadow taken as the median across the
+whole opening, so the leftover feet are outvoted by the clean run of it.
+
 `tools/build_shelf.py` regenerates all of it from a source photograph, run it
 against a higher-resolution export and the site picks up the sharper assets
 with no code change:
@@ -260,6 +270,12 @@ Last swept clean at 320×568, 360×740, 390×844, 430×932, 768×1024, 1024×768
 
 ## Details worth keeping
 
+- The process rail on Approach is a timeline, so it reads as one continuous
+  run: resting on a stage inks the line from the first stage down to that one
+  and fills every node it passes. Each stage's length of line runs to the
+  *next* node, gap included, and `:has(~ .rail-step:hover)` reaches back up the
+  list. A stage that can only light its own length shows as a lit segment
+  floating between two unlit gaps, which reads as a broken line.
 - `prefers-reduced-motion` disables the dust field and the page turn, and
   collapses the entrance animations.
 - Nothing drifts or sways: every object is fixed in its scene. There is no
