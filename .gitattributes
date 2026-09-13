@@ -1,0 +1,9 @@
+# One line ending in the repository, whatever the machine checking it out.
+* text=auto eol=lf
+
+# Binaries are never touched.
+*.webp binary
+*.mp4  binary
+*.pdf  binary
+*.png  binary
+*.jpg  binary
