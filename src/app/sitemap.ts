@@ -4,7 +4,8 @@ import { VOLUMES } from "@/data/volumes";
 /** Written out at build time — the site is a static export. */
 export const dynamic = "force-static";
 
-const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.com";
+const BASE =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://ishashah0309.github.io";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return VOLUMES.map((v) => ({

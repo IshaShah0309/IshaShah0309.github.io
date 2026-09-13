@@ -224,8 +224,12 @@ plate instead.
 labels, spine text, emblems and each volume's slot on the shelf. Contact
 details live in `SITE` at the bottom of the same file.
 
-**Deploy** — set `NEXT_PUBLIC_SITE_URL` so `sitemap.xml` and `robots.txt` point
-at the real domain.
+**Deploy** — every push to `main` runs `.github/workflows/deploy.yml`, which
+builds the static export and publishes it to GitHub Pages at
+<https://ishashah0309.github.io>. Pages must be set to **Source: GitHub
+Actions** in the repository settings. `sitemap.xml` and `robots.txt` default to
+that URL; set the `NEXT_PUBLIC_SITE_URL` Actions variable to override it if the
+site ever moves to its own domain.
 
 ---
 
