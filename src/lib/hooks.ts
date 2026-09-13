@@ -37,7 +37,7 @@ export function useScrolledPast(threshold: number): boolean {
   return useSyncExternalStore(subscribe, get, () => false);
 }
 
-/** True only after hydration — for anything that must not render on the server. */
+/** True only after hydration, for anything that must not render on the server. */
 export function useMounted(): boolean {
   return useSyncExternalStore(
     noop,

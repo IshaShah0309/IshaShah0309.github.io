@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /* ============================================================
-   THE LEARNING ARCHIVE — design tokens
+   THE LEARNING ARCHIVE, design tokens
    Colours sampled directly from the Canva source PDF.
    ============================================================ */
 
@@ -73,7 +73,7 @@ body {
    ============================================================ */
 
 @layer components {
-  /* Small-caps letterspaced label — the "GALLERY / APPROACH" voice */
+  /* Small-caps letterspaced label, the "GALLERY / APPROACH" voice */
   .eyebrow {
     font-family: var(--font-ui);
     text-transform: uppercase;
@@ -258,7 +258,7 @@ body {
   }
 
   /*
-   * Anything measured in `em` inside a page — icon boxes, circles, gaps —
+   * Anything measured in `em` inside a page, icon boxes, circles, gaps, 
    * must scale with the page, not with the browser's 16px default. This sets
    * the page's own base size so `em` means "page units" throughout; the .pg-*
    * classes override it for type.

@@ -38,7 +38,7 @@ export default function NotFound() {
         </h1>
         <Divider className="mt-2" width={170} />
         <p className="text-balance mt-5 max-w-[28rem] text-[14px] leading-relaxed text-cream/70">
-          This volume was never bound — or it has been reshelved. Return to the
+          This volume was never bound, or it has been reshelved. Return to the
           collection and pick another.
         </p>
         <Link

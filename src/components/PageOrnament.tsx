@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 /**
- * The faint ruled panel that heads a verso page in the source deck — a double
+ * The faint ruled panel that heads a verso page in the source deck, a double
  * hairline box with a swirl centred on its top edge. It carries no content;
  * it is what keeps the top of a page from reading as an accident.
  */
@@ -35,7 +35,7 @@ export function TopOrnament({ height = "3.4em" }: { height?: string }) {
  * A mount for the photograph that heads the introduction.
  *
  * The photograph is a print with its own deckled border, so when it is there
- * it is simply laid on the page — a second ruled frame around a frame reads as
+ * it is simply laid on the page, a second ruled frame around a frame reads as
  * a mistake. The drawn mount is only for the gap before the print exists.
  */
 export function HeadshotMount({

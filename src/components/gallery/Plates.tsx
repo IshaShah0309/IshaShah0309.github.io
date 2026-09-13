@@ -258,7 +258,7 @@ export default function Plates({ height }: { height: string }) {
 }
 
 /**
- * The stamp that says a sheet is still to come — struck across the plate in
+ * The stamp that says a sheet is still to come, struck across the plate in
  * maroon, at an angle, the way a stamp lands on paper rather than the way a
  * label is placed on a page.
  */

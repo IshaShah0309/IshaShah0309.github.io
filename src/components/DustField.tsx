@@ -33,7 +33,7 @@ function Motes({ count = 170 }: { count?: number }) {
     return { positions, scales, speeds, phases };
   }, [count]);
 
-  // A soft round sprite — a square point would read as a pixel, not a mote.
+  // A soft round sprite, a square point would read as a pixel, not a mote.
   const sprite = useMemo(() => {
     const c = document.createElement("canvas");
     c.width = c.height = 64;
@@ -71,7 +71,7 @@ function Motes({ count = 170 }: { count?: number }) {
     }
     geo.attributes.position.needsUpdate = true;
 
-    // The whole field leans away from the pointer — cheap, convincing depth.
+    // The whole field leans away from the pointer, cheap, convincing depth.
     if (points.current) {
       points.current.rotation.y +=
         (pointer.current.x * 0.09 - points.current.rotation.y) * 0.03;

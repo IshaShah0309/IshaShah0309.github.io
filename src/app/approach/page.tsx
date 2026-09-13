@@ -7,9 +7,9 @@ import { CompassIcon, HeartIcon, GroupIcon } from "@/components/icons";
 import { Divider } from "@/components/Ornament";
 
 export const metadata: Metadata = {
-  title: "Behind the Learning",
+  title: "My Approach",
   description:
-    "People, purpose and practical solutions — the principles and process behind Isha Shah's learning design.",
+    "People, purpose and practical solutions: the principles and process behind Isha Shah's learning design.",
 };
 
 const MATTERS = [

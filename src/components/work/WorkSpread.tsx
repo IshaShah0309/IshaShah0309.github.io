@@ -85,7 +85,7 @@ function ChapterCard({
 
       {/*
         The plate window. The cover is an illustration rather than a crop of a
-        photograph, so it is shown whole — `contain` on a paper ground — and
+        photograph, so it is shown whole, `contain` on a paper ground, and
         never cut off at the edges of the card.
       */}
       <span className="relative my-[0.55em] block min-h-0 w-full flex-1 overflow-hidden border border-[#8a6a2e]/30 bg-[#f1e6ca]">

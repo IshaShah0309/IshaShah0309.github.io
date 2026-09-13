@@ -2,7 +2,7 @@
  * The Work volume.
  *
  * Each chapter holds a run of projects, and each project is set out the same
- * way — the need behind it, the role in making it, the outcome, the tools, and
+ * way, the need behind it, the role in making it, the outcome, the tools, and
  * the samples. Every part is optional: a project can lead with a video, with a
  * pair of sheets side by side, or with a portrait sheet; it can open with an
  * overview instead of a stated need; and it can drop the samples section when
@@ -38,7 +38,7 @@ export type Project = {
   tools: string[];
 
   samples: Sample[];
-  /** Drop the samples section entirely — the cover is the whole of it. */
+  /** Drop the samples section entirely, the cover is the whole of it. */
   hideSamples?: boolean;
   samplesLabel?: string;
   samplePortrait?: boolean;
@@ -71,7 +71,7 @@ export const CHAPTERS: Chapter[] = [
     audience: "Employees, students, faculty",
     role: "Instructional Designer (T&D intern)",
     summary:
-      "Self-paced courses and structured learning built around objectives — designed for clarity first, then styled so the structure is visible.",
+      "Self-paced courses and structured learning built around objectives, designed for clarity first, then styled so the structure is visible.",
     cover: "/assets/work/covers/course-design.webp",
     projects: [
       {
@@ -115,7 +115,7 @@ export const CHAPTERS: Chapter[] = [
           "Created a foundational course that gives new employees an introduction to CATS and Visa Online before they begin using the systems in their day-to-day work. The course also directs learners to the manuals they will continue using after training.",
         tools: ["Canva", "iSpring", "PowerPoint", "Microsoft 365"],
         cover: "/assets/work/cats/01.webp",
-        coverCaptions: ["Course opening — CATS and Visa Online for MCC team members"],
+        coverCaptions: ["Course opening: CATS and Visa Online for MCC team members"],
         samples: [
           { src: "/assets/work/cats/02.webp", caption: "Framing the course around a real member scenario" },
           { src: "/assets/work/cats/03.webp", caption: "Where to locate CATS, in the intranet the team uses" },
@@ -138,9 +138,9 @@ export const CHAPTERS: Chapter[] = [
           "Created a new training resource that gives first-time trainers and supervisors practical guidance for preparing, delivering, and improving their own training sessions. The accompanying worksheet allows them to apply the material directly to their specific training needs.",
         tools: ["Canva", "iSpring", "PowerPoint"],
         cover: "/assets/work/train-the-trainer/01.webp",
-        coverCaptions: ["Course opening — personalised and remote onboarding"],
+        coverCaptions: ["Course opening: personalised and remote onboarding"],
         samples: [
-          { src: "/assets/work/train-the-trainer/02.webp", caption: "The Situation–Behavior–Impact model, with example language" },
+          { src: "/assets/work/train-the-trainer/02.webp", caption: "The Situation-Behavior-Impact model, with example language" },
           { src: "/assets/work/train-the-trainer/03.webp", caption: "Customizable try-out worksheet" },
         ],
       },
@@ -180,10 +180,10 @@ export const CHAPTERS: Chapter[] = [
           "Developed a short financial-literacy resource for outreach programming that gives college students practical starting points for managing money and understanding resources available to support their financial goals.",
         tools: ["Canva", "PowerPoint"],
         cover: "/assets/work/money-management/01.webp",
-        coverCaptions: ["Title — a guide for college students"],
+        coverCaptions: ["Title: a guide for college students"],
         samples: [
           { src: "/assets/work/money-management/04.webp", caption: "Learning objectives, set before the content" },
-          { src: "/assets/work/money-management/02.webp", caption: "Drag-and-drop — sorting spending into wants and needs" },
+          { src: "/assets/work/money-management/02.webp", caption: "Drag-and-drop: sorting spending into wants and needs" },
           { src: "/assets/work/money-management/03.webp", caption: "How credit scores work, broken down by weighting" },
         ],
       },
@@ -205,7 +205,7 @@ export const CHAPTERS: Chapter[] = [
         cover: "/assets/work/assignment-hub/00-cover.webp",
         coverCaptions: ["The Assignment Hub in Canvas"],
         samples: [
-          { src: "/assets/work/assignment-hub/02.webp", caption: "Professional Development Activity — overview, objectives and alignment" },
+          { src: "/assets/work/assignment-hub/02.webp", caption: "Professional Development Activity: overview, objectives and alignment" },
           { src: "/assets/work/assignment-hub/03.webp", caption: "Final Portfolio assignment" },
           { src: "/assets/work/assignment-hub/01.webp", caption: "Résumé feedback assignment built on VMock" },
         ],
@@ -240,7 +240,7 @@ export const CHAPTERS: Chapter[] = [
     audience: "Students, employees, faculty, leaders",
     role: "Facilitator & Designer",
     summary:
-      "Sessions designed and delivered in the room — from the run of show to the last slide, and the follow-up that makes it stick.",
+      "Sessions designed and delivered in the room, from the run of show to the last slide, and the follow-up that makes it stick.",
     cover: "/assets/work/covers/facilitation.webp",
     projects: [
       {
@@ -259,7 +259,7 @@ export const CHAPTERS: Chapter[] = [
           "Created and delivered a new two-day professional development workshop that helped interns reflect on their experience, strengthen their professional presence, and prepare for future job and internship opportunities.",
         tools: ["Canva", "PowerPoint", "Microsoft 365"],
         cover: "/assets/work/career-library/01.webp",
-        coverCaptions: ["Workshop opening — the career library"],
+        coverCaptions: ["Workshop opening: the career library"],
         samples: [
           { src: "/assets/work/career-library/02.webp", caption: "What employers look for, split three ways" },
           { src: "/assets/work/career-library/03.webp", caption: "Reframing career advancement as visible work" },
@@ -287,7 +287,7 @@ export const CHAPTERS: Chapter[] = [
         samples: [
           { src: "/assets/work/working-learner/02.webp", caption: "Introducing the eight NACE career competencies" },
           { src: "/assets/work/working-learner/01.webp", caption: "A competency unpacked with examples from on-campus work" },
-          { src: "/assets/work/working-learner/04.webp", caption: "Writing activity — Action Verb + Task + Result" },
+          { src: "/assets/work/working-learner/04.webp", caption: "Writing activity: Action Verb + Task + Result" },
           { src: "/assets/work/working-learner/03.webp", caption: "Live Kahoot knowledge check" },
           { src: "/assets/work/work-plus-community/01.webp", caption: "Professional development kits" },
         ],
@@ -346,7 +346,7 @@ export const CHAPTERS: Chapter[] = [
     audience: "Students, faculty, staff, colleagues",
     role: "Facilitator & Creator",
     summary:
-      "The reference shelf — guides, sites, manuals and one-pagers people keep after the session is over.",
+      "The reference shelf: guides, sites, manuals and one-pagers people keep after the session is over.",
     cover: "/assets/work/covers/resources.webp",
     projects: [
       {
@@ -367,7 +367,7 @@ export const CHAPTERS: Chapter[] = [
         coverCaptions: ["Guide cover"],
         coverPortrait: true,
         samples: [
-          { src: "/assets/work/faculty-guide/02.webp", caption: "Introduction — framing the guide as a partnership" },
+          { src: "/assets/work/faculty-guide/02.webp", caption: "Introduction: framing the guide as a partnership" },
         ],
       },
       {
@@ -386,7 +386,7 @@ export const CHAPTERS: Chapter[] = [
           "Focus-group feedback provided direct employee input into training and resource decisions, helping identify gaps, recurring concerns, and opportunities to improve future materials.",
         tools: ["Microsoft 365", "Excel"],
         cover: "/assets/work/focus-groups/01.webp",
-        coverCaptions: ["Training manuals focus group — opening"],
+        coverCaptions: ["Training manuals focus group: opening"],
         samples: [
           { src: "/assets/work/focus-groups/02.webp", caption: "Product Knowledge focus group in session" },
         ],
@@ -407,7 +407,7 @@ export const CHAPTERS: Chapter[] = [
           "Created a centralized post-training resource that extends learning beyond the presentation and gives student employees continued access to career-development tools and personalized support.",
         tools: ["Canva", "Microsoft 365"],
         cover: "/assets/work/pd-website/01.webp",
-        coverCaptions: ["Tools to thrive — the Work+ home page"],
+        coverCaptions: ["Tools to thrive: the Work+ home page"],
         samples: [
           { src: "/assets/work/pd-website/02.webp", caption: "Career competencies, each linked to a LinkedIn Learning course" },
         ],
@@ -464,7 +464,7 @@ export const CHAPTERS: Chapter[] = [
     audience: "Employees, students, staff, leaders",
     role: "Manager & Support",
     summary:
-      "Programmes and events run end to end — the logistics, the communications, and the parts nobody sees when it goes well.",
+      "Programmes and events run end to end: the logistics, the communications, and the parts nobody sees when it goes well.",
     cover: "/assets/work/covers/events.webp",
     projects: [
       {
@@ -483,7 +483,7 @@ export const CHAPTERS: Chapter[] = [
           "Led programming that recognized and engaged 50+ student employees while establishing a foundation for future student employee recognition efforts. The project combined event planning, budgeting, communications, and community-building into one coordinated initiative.",
         tools: ["Canva", "Microsoft 365", "Excel"],
         cover: "/assets/work/nsew/01.webp",
-        coverCaptions: ["Carousel of Fun — campaign flyer"],
+        coverCaptions: ["Carousel of Fun: campaign flyer"],
         coverPortrait: true,
         samples: [],
         hideSamples: true,
@@ -508,7 +508,7 @@ export const CHAPTERS: Chapter[] = [
           "/assets/work/wwyl-fair/02.webp",
         ],
         coverCaptions: [
-          "Spring 2026 campaign — Navigate Your Career Journey",
+          "Spring 2026 campaign: Navigate Your Career Journey",
           "Event recap",
         ],
         coverPortrait: true,

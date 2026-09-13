@@ -7,7 +7,7 @@ import DustField from "@/components/DustField";
 import { MailIcon, PhoneIcon, LinkedInIcon } from "@/components/icons";
 
 export const metadata: Metadata = {
-  title: "Contact Info",
+  title: "Contact",
   description: `Get in touch with ${SITE.owner} about training, facilitation and learning design opportunities.`,
 };
 

@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-/** Written out at build time — the site is a static export. */
+/** Written out at build time, the site is a static export. */
 export const dynamic = "force-static";
 
 /* `||`, not `??`: CI passes the variable through as an empty string when

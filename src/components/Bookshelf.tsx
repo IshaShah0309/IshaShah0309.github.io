@@ -8,7 +8,7 @@ import { VOLUMES, SHELF_OPENING as OPEN } from "@/data/volumes";
 /**
  * The shelf is built from real objects, not one flat picture.
  *
- *  · `alcove.webp` is the photograph with every volume removed — the frame,
+ *  · `alcove.webp` is the photograph with every volume removed, the frame,
  *    the rail, the lamp, the globe and an empty back panel behind them.
  *  · Each volume is its own cut-out standing in the alcove.
  *  · The books live inside a box clipped to the shelf opening, so a volume
@@ -21,7 +21,7 @@ import { VOLUMES, SHELF_OPENING as OPEN } from "@/data/volumes";
 
 const PHOTO = { w: 1249, h: 717 };
 const PHOTO_RATIO = PHOTO.w / PHOTO.h;
-/** How much of the photograph's height is shown — crops the empty wall above. */
+/** How much of the photograph's height is shown, crops the empty wall above. */
 const VIEW_RATIO = 2.86;
 
 const openW = OPEN.right - OPEN.left;
@@ -62,7 +62,7 @@ export default function Bookshelf() {
               className="drag-none absolute inset-0 h-full w-full select-none"
               style={{
                 // A single mask layer: the photograph's ends dissolve into the
-                // room instead of stopping at a line. (One layer deliberately —
+                // room instead of stopping at a line. (One layer deliberately, 
                 // compositing two mask layers is inconsistent across engines.)
                 WebkitMaskImage:
                   "linear-gradient(90deg, transparent 0%, #000 3.4%, #000 96.6%, transparent 100%)",
@@ -81,7 +81,7 @@ export default function Bookshelf() {
               }}
             />
 
-            {/* the shelf opening — a volume cannot leave it */}
+            {/* the shelf opening, a volume cannot leave it */}
             <div
               className="absolute overflow-hidden"
               style={{
@@ -107,7 +107,7 @@ export default function Bookshelf() {
                   <button
                     key={v.slug}
                     type="button"
-                    aria-label={`${v.numeral} — ${v.spine.join(" ")}`}
+                    aria-label={`${v.numeral}, ${v.spine.join(" ")}`}
                     onMouseEnter={() => {
                       setHovered(i);
                     }}

@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 # Every push to main rebuilds the site and publishes it. The build output is
 # a plain static export (see `output: "export"` in next.config.ts), so Pages
-# serves it directly — there is no server and nothing to configure by hand.
+# serves it directly, there is no server and nothing to configure by hand.
 
 on:
   push:

@@ -10,7 +10,7 @@ import type { Volume } from "@/data/volumes";
  *
  *  · one measurement, `--desk`, taken from the desk photograph's own aspect,
  *    so the surface never crops and everything can be seated against it;
- *  · shadow, not lines — the wall darkens *into* the desk and the desk's far
+ *  · shadow, not lines, the wall darkens *into* the desk and the desk's far
  *    edge sits in that shadow, so the join is a gradient rather than a cut;
  *  · one atmosphere pass over the whole scene, which grades the separate
  *    photographs into a single light.
@@ -19,7 +19,7 @@ import type { Volume } from "@/data/volumes";
 export const NAV = 84;
 /** The desk photograph is 1275 × 126; hold that ratio and it never crops. */
 export const DESK_VAR = { "--desk": "calc(100vw / 10.12)" } as CSSProperties;
-/** Book cut-outs are 141 × 348 — the closed volume's aspect. */
+/** Book cut-outs are 141 × 348, the closed volume's aspect. */
 export const SPINE_RATIO = 141 / 348;
 
 /** Wall, floor-shadow and vignette. Sits behind everything. */

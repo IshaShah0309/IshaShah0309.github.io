@@ -14,7 +14,7 @@ export default function Nav() {
   const scrolled = useScrolledPast(40);
   const isHome = pathname === "/";
 
-  // Close the index when the route changes — adjusted during render rather
+  // Close the index when the route changes, adjusted during render rather
   // than in an effect, so the menu never paints over the new page.
   const [lastPath, setLastPath] = useState(pathname);
   if (lastPath !== pathname) {
@@ -39,7 +39,7 @@ export default function Nav() {
         }`}
       >
         <nav className="mx-auto flex h-[68px] max-w-[1420px] items-center justify-between px-5 md:h-[76px] lg:justify-center">
-          {/* Wordmark — collapses to a monogram on small screens */}
+          {/* Wordmark, collapses to a monogram on small screens */}
           <Link
             href="/"
             className="font-display text-[19px] leading-none text-cream lg:hidden"
@@ -143,7 +143,7 @@ export default function Nav() {
         />
       </header>
 
-      {/* Mobile — a table of contents rather than a menu */}
+      {/* Mobile, a table of contents rather than a menu */}
       <AnimatePresence>
         {open && (
           <motion.div

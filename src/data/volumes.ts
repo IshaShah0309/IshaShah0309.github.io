@@ -15,7 +15,7 @@ export type Volume = {
   slot: { left: number; width: number; top: number; height: number };
   /** Cropped spine artwork */
   art: string;
-  /** Accent colour of the binding — used for glows and the index */
+  /** Accent colour of the binding, used for glows and the index */
   binding: string;
   /** One-line description for the index & metadata */
   blurb: string;
@@ -44,7 +44,7 @@ export const VOLUMES: Volume[] = [
     slot: { left: 0.26501, width: 0.11769, top: 0.43096, height: 0.48396 },
     art: "/assets/shelf/book-2.webp",
     binding: "#5c2027",
-    blurb: "How I got here — the academic foundation and the work that followed.",
+    blurb: "How I got here: the academic foundation and the work that followed.",
   },
   {
     slug: "/approach",
@@ -80,7 +80,7 @@ export const VOLUMES: Volume[] = [
     slot: { left: 0.61009, width: 0.11289, top: 0.43096, height: 0.48117 },
     art: "/assets/shelf/book-5.webp",
     binding: "#25352a",
-    blurb: "A plate section — each photograph is a design created from scratch.",
+    blurb: "A plate section. Each photograph is a design created from scratch.",
   },
   {
     slug: "/contact",
@@ -92,7 +92,7 @@ export const VOLUMES: Volume[] = [
     slot: { left: 0.72298, width: 0.11289, top: 0.43096, height: 0.48117 },
     art: "/assets/shelf/book-6.webp",
     binding: "#5c2027",
-    blurb: "Questions, opportunities, or a conversation — the door is open.",
+    blurb: "Questions, opportunities, or a conversation. The door is open.",
   },
 ];
 

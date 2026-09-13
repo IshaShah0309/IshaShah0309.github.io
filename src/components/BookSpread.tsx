@@ -28,7 +28,7 @@ type Props = {
 /**
  * Only the three volumes that are actually a book spread. The arrows turn
  * pages within the book, and at the front of it there is simply no arrow.
- * At the back, Work hands on to the gallery — which is not a spread, so it
+ * At the back, Work hands on to the gallery, which is not a spread, so it
  * is walked to rather than turned to.
  */
 const SPREADS = ["/about", "/approach", "/work"];
@@ -39,7 +39,7 @@ const BOOK_RATIO = 1527 / 1205;
 /** The height the desk and the header leave for the book. */
 const BOOK_H = `calc(100svh - ${NAV}px - var(--desk) - 14px)`;
 const BOOK_W = `min(62vw, calc(${BOOK_H} * ${BOOK_RATIO}))`;
-/** Whichever of the two actually binds — the closed volume matches it. */
+/** Whichever of the two actually binds, the closed volume matches it. */
 const OPEN_H = `min(${BOOK_H}, calc(62vw / ${BOOK_RATIO}))`;
 
 export default function BookSpread({
@@ -237,7 +237,7 @@ function PageBody({ children }: { children: React.ReactNode }) {
   );
 }
 
-/** A single loose parchment leaf — the mobile stand-in for a page. */
+/** A single loose parchment leaf, the mobile stand-in for a page. */
 function Leaf({ children }: { children: React.ReactNode }) {
   return (
     <div

@@ -5,9 +5,9 @@ import { CapIcon, CaseIcon, PersonIcon } from "@/components/icons";
 import { HeadshotMount } from "@/components/PageOrnament";
 
 export const metadata: Metadata = {
-  title: "The Introduction",
+  title: "About Isha",
   description:
-    "Isha Shah — a Master's candidate in Industrial/Organizational Psychology working in training, facilitation and learning experience design.",
+    "Isha Shah, a Master's candidate in Industrial/Organizational Psychology working in training, facilitation and learning experience design.",
 };
 
 const PROFILE: [string, string][] = [
@@ -21,7 +21,7 @@ const PROFILE: [string, string][] = [
 ];
 
 /**
- * The photograph heads the page and the provenance is set beneath it — a
+ * The photograph heads the page and the provenance is set beneath it, a
  * frontispiece above its caption.
  */
 function Verso() {

@@ -51,7 +51,7 @@ const TORN = (() => {
 })();
 
 /**
- * A chapter opened out full screen — the whole window becomes the leaf, and it
+ * A chapter opened out full screen, the whole window becomes the leaf, and it
  * scrolls. Each project is set out the same way and separated by a ruled page
  * break, so the chapter reads as a run of work rather than one case study.
  *
@@ -146,7 +146,7 @@ export default function ChapterPage({
       transition={{ duration: 0.32 }}
       role="dialog"
       aria-modal="true"
-      aria-label={`${chapter.roman} — ${chapter.title}`}
+      aria-label={`${chapter.roman}: ${chapter.title}`}
       ref={shell}
       style={{ "--roll-head": "26px", "--roll-foot": "38px" } as CSSProperties}
     >
@@ -517,7 +517,7 @@ function PageBreak({ index }: { index: number }) {
 /**
  * One of the two rods the chapter is wound on. Both are pinned to the window
  * and take their thickness from how far the reader has paid the parchment out
- * — the roll at the foot thins away as the roll at the head builds up.
+ *, the roll at the foot thins away as the roll at the head builds up.
  */
 function Rod({ where }: { where: "head" | "foot" }) {
   const head = where === "head";
@@ -626,7 +626,7 @@ function Plate({
     <button
       type="button"
       onClick={onOpen}
-      aria-label={`Enlarge — ${caption}`}
+      aria-label={`Enlarge: ${caption}`}
       className={`group relative block w-full cursor-pointer outline-none transition-transform duration-500 hover:-translate-y-1 focus-visible:ring-2 focus-visible:ring-maroon/50 ${className}`}
     >
       {body}

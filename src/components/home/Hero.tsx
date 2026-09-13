@@ -7,7 +7,7 @@ import { SITE } from "@/data/volumes";
 
 /**
  * The hero is one composition measured against its own width. Every part of
- * it — the rules, the type, the shelf, the plinth — is a fraction of that
+ * it, the rules, the type, the shelf, the plinth, is a fraction of that
  * width, so the whole thing holds its proportions at any viewport instead of
  * each piece resizing on its own terms.
  *
@@ -162,7 +162,7 @@ export default function Hero() {
             className="relative"
             style={{
               height: "clamp(62px, 5.2cqw, 96px)",
-              // One continuous wash rather than a tiled texture — the repeat
+              // One continuous wash rather than a tiled texture, the repeat
               // was printing seams down the band.
               background: [
                 "radial-gradient(130% 180% at 18% -40%, rgba(255,252,238,0.5), transparent 60%)",

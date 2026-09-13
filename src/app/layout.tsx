@@ -30,13 +30,18 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://the-learning-archive.local"),
+  /*
+    Tab titles are short and say what the page is. A browser tab shows very
+    few characters, so the page name has to survive on its own; the favicon
+    carries the identity.
+  */
   title: {
-    default: `${SITE.title} — ${SITE.owner}`,
-    template: `%s — ${SITE.title}`,
+    default: SITE.title,
+    template: "%s | Isha Shah",
   },
   description: SITE.tagline,
   openGraph: {
-    title: `${SITE.title} — ${SITE.owner}`,
+    title: `${SITE.title} | ${SITE.owner}`,
     description: SITE.tagline,
     type: "website",
   },

@@ -13,7 +13,7 @@ import {
 } from "@/components/RoomScene";
 
 export const metadata: Metadata = {
-  title: "Learning in Action",
+  title: "Gallery",
   description:
     "A plate section of designs created for training, facilitation and learning programmes.",
 };

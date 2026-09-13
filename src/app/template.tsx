@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 
 /**
  * Every route arrives the way a page settles after it has been turned.
- * Opacity only — a translate here would add its own scroll overflow to
+ * Opacity only, a translate here would add its own scroll overflow to
  * layouts that are sized to exactly one screen.
  */
 export default function Template({ children }: { children: React.ReactNode }) {

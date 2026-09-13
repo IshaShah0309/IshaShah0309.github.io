@@ -12,7 +12,7 @@ export default function SmoothScroll() {
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       touchMultiplier: 1.6,
       // Without this, Lenis swallows the wheel before a nested scroller ever
-      // sees it — which is why the full-screen chapter pages would not scroll.
+      // sees it, which is why the full-screen chapter pages would not scroll.
       allowNestedScroll: true,
     });
 

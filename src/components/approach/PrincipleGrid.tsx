@@ -8,7 +8,7 @@ import {
 
 /**
  * The five principles, scattered across two staggered rows the way the deck
- * arranges them — a set of marks on the page, not a table.
+ * arranges them, a set of marks on the page, not a table.
  */
 const PRINCIPLES = [
   { Icon: GroupIcon, label: "Audience-centered", col: "sm:col-start-2", row: "sm:row-start-1" },

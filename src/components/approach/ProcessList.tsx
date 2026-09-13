@@ -10,7 +10,7 @@ const STEPS = [
 ];
 
 /**
- * The five stages, centred on a slip of aged paper — set as the deck sets
+ * The five stages, centred on a slip of aged paper, set as the deck sets
  * them, with the title over its line rather than beside a rail.
  *
  * The rail runs down the left of the slip as a dotted rule in the paper's own
